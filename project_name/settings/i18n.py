@@ -1,0 +1,16 @@
+# Internationalization
+# https://docs.djangoproject.com/en/{{ docs_version }}/topics/i18n/
+
+DATETIME_FORMAT = config('DATETIME_FORMAT', default='H:i, d M Y')
+
+LANGUAGE_CODE = config('LANGUAGE_CODE', default='en-us')
+
+TIME_ZONE = config('TIME_ZONE', default='UTC')
+
+USE_I18N = config('USE_I18N', default=True, cast=bool)
+
+USE_L10N = config('USE_L10N', default=True, cast=bool)
+
+USE_TZ = config('USE_TZ', default=True, cast=bool)
+
+LANGUAGES = config('LANGUAGES', default=LANGUAGE_CODE, cast=lambda v: [(s.strip(), s.strip()) for s in v.split(',')])
