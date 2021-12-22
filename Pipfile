@@ -6,13 +6,5 @@ name = "pypi"
 [packages]
 python-decouple = "*"
 django = "*"
-djangorestframework = "*"
-django-cors-headers = "*"
-djoser = "*"
-django-filter = "*"
-django-guardian = "*"
-pyyaml = "*"
-uritemplate = "*"
-djangorestframework-simplejwt = "*"
 
 [dev-packages]

@@ -1,5 +1,11 @@
-# Database
-# https://docs.djangoproject.com/en/{{ docs_version }}/ref/settings/#databases
+"""
+Database settings
+
+https://docs.djangoproject.com/en/{{ docs_version }}/ref/settings/#databases
+"""
+from decouple import config
+
+from project_name.settings.common import BASE_DIR
 
 DATABASES = {
     'default': {
