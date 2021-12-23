@@ -1,8 +1,8 @@
 """
 Email settings
 
-https://docs.djangoproject.com/en/3.1/topics/email/
-https://docs.djangoproject.com/en/3.1/ref/settings/#email-host
+https://docs.djangoproject.com/en/{{ docs_version }}/topics/email/
+https://docs.djangoproject.com/en/{{ docs_version }}/ref/settings/#email-host
 """
 from decouple import config
 
